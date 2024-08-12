@@ -1,0 +1,30 @@
+//Constructor in abstract clas
+abstract class Checker
+{
+	Checker()
+	{
+		System.out.printl(" Constructor Checkewr is running");
+	}
+	abstract void checking();
+    void adding()
+    {
+    	System.out.println("Adding is pERFORM");
+    }
+}
+class subclass extends Checker
+{
+	void checking()
+	{
+		System.out.println("Checking is done!");
+	}
+}
+class ConsAbstract
+{
+	public static void main(String ... args)
+	{ 
+      
+       Checker ch=new Checker();
+       ch.checking();
+       ch.adding();
+	}
+}
